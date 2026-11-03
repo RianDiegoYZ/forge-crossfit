@@ -1,0 +1,118 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #101010;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* CABEÇALHO */
+header {
+    text-align: center;
+    padding: 35px 20px;
+    background-color: #181818;
+    border-bottom: 2px solid #ff0000;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+header h1 span {
+    color: #ff0000;
+}
+
+header p {
+    color: #bbbbbb;
+    margin-top: 10px;
+}
+
+/* ÁREA PRINCIPAL */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* FORMULÁRIO */
+#formCadastro {
+    width: 100%;
+    max-width: 550px;
+    background-color: #202020;
+    padding: 35px;
+    border: 1px solid #383838;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.12);
+}
+
+#formCadastro h2 {
+    text-align: center;
+    color: #ff0000;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* CAMPOS */
+#formCadastro label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+#formCadastro input,
+#formCadastro select {
+    width: 100%;
+    padding: 13px;
+    background-color: #303030;
+    border: 1px solid #444444;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+}
+
+#formCadastro input:focus,
+#formCadastro select:focus {
+    border-color: #ff0000;
+}
+
+/* BOTÃO */
+#formCadastro button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#formCadastro button:hover {
+    background-color: #cc0000;
+    transform: translateY(-3px);
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    #formCadastro {
+        padding: 22px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
